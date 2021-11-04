@@ -1,0 +1,27 @@
+.ratings {
+  cursor: pointer;
+
+  .glyphicon {
+    display: inline-block;
+    font-family: $font-family-icon;
+    font-size: 1.5rem;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+  }
+
+  .glyphicon-star {
+    &:before {
+      content: '\f27d';
+      color: $amber;
+    }
+  }
+
+  .glyphicon-star-empty {
+    &:before {
+      content: '\f27d';
+      color: #e4e4e4;
+    }
+  }
+}

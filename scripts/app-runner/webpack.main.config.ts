@@ -34,7 +34,6 @@ const mainConfig: Configuration = {
           {
             loader: 'ts-loader',
             options: {
-              // 指定特定的ts编译配置，为了区分脚本的ts配置
               configFile: resolve(__dirname, '../../src/tsconfig.main.json'),
             },
           },
