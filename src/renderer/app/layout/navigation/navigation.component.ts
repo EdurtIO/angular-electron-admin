@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '@renderer/services/navigation.service';
 
 @Component({
   selector: 'app-navigation',
@@ -6,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  constructor() {
+  sidebarVisible: boolean;
+
+  constructor(private navigationService: NavigationService) {
+    navigationService.sidebarVisibilitySubject.subscribe((value) => {
+      this.sidebarVisible = value;
+    });
   }
 
   ngOnInit() {
