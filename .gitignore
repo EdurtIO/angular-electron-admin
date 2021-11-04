@@ -10,7 +10,6 @@ main.js
 src/**/*.js
 !src/karma.conf.js
 *.js.map
-yarn.lock
 
 # dependencies
 node_modules
@@ -41,7 +40,6 @@ testem.log
 /typings
 
 package-lock.json
-yarn.lock
 
 # e2e
 /e2e/*.js

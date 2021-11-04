@@ -43,7 +43,7 @@ function greeting(): void {
   let text = '';
 
   if (cols > 104) {
-    text = 'ng-electron';
+    text = 'angular-electron-admin';
   } else if (cols > 76) {
     text = 'ng-|electron';
   }
@@ -55,7 +55,7 @@ function greeting(): void {
       space: false
     });
   } else {
-    console.log(chalk.yellow.bold('\n  ng-electron'));
+    console.log(chalk.yellow.bold('\n  angular-electron-admin'));
   }
 }
 

@@ -36,7 +36,7 @@ function greeting() {
     var cols = process.stdout.columns;
     var text = '';
     if (cols > 104) {
-        text = 'ng-electron';
+        text = 'angular-electron-admin';
     }
     else if (cols > 76) {
         text = 'ng-|electron';
@@ -49,16 +49,24 @@ function greeting() {
         });
     }
     else {
-        console.log(chalk.yellow.bold('\n  ng-electron'));
+        console.log(chalk.yellow.bold('\n  angular-electron-admin'));
     }
 }
 exports.greeting = greeting;
-function mainLog(data, color) { printLog('Main', data, color); }
+function mainLog(data, color) {
+    printLog('Main', data, color);
+}
 exports.mainLog = mainLog;
-function rendererLog(data, color) { printLog('Renderer', data, color); }
+function rendererLog(data, color) {
+    printLog('Renderer', data, color);
+}
 exports.rendererLog = rendererLog;
-function electronLog(data, color) { printLog('Electron', data, color); }
+function electronLog(data, color) {
+    printLog('Electron', data, color);
+}
 exports.electronLog = electronLog;
-function runnerLog(data, color) { printLog('Runner', data, color); }
+function runnerLog(data, color) {
+    printLog('Runner', data, color);
+}
 exports.runnerLog = runnerLog;
 //# sourceMappingURL=logger.js.map

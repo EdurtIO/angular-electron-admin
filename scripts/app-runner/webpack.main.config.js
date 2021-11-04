@@ -49,7 +49,9 @@ var mainConfig = {
         extensions: ['.ts', '.json', '.js']
     },
 };
-if (process.env.NODE_ENV !== 'production') { }
-if (process.env.NODE_ENV === 'production') { }
+if (process.env.NODE_ENV !== 'production') {
+}
+if (process.env.NODE_ENV === 'production') {
+}
 exports.default = mainConfig;
 //# sourceMappingURL=webpack.main.config.js.map
