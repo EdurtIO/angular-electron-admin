@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from '@renderer/services/layout/theme.service';
 
 @Component({
   selector: 'app-layout',
@@ -6,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 // @ts-ignore
 export class LayoutComponent implements OnInit {
+  theme: string = this.themeService.theme;
 
-  constructor() {
+  constructor(private themeService: ThemeService) {
+    themeService.themeSubject.subscribe((value) => {
+      this.theme = value;
+    });
   }
 
   ngOnInit() {
   }
-
 }
