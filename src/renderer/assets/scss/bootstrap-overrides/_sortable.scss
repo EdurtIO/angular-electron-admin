@@ -1,0 +1,28 @@
+.sortable__item {
+  padding: 0.9rem 1rem 0.9rem 2rem;
+  position: relative;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $sortable-border-color;
+  }
+
+  &:before {
+    content: '\f30c';
+    font-family: $font-family-icon;
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    font-size: 1.4rem;
+  }
+
+}
+
+.sortable__active {
+  background-color: $sortable-border-color;
+  padding-left: 2.5rem;
+
+  &:before {
+    left: 1rem;
+  }
+}
