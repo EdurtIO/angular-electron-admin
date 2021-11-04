@@ -9,7 +9,8 @@
 .content {
   &:not(.content--boxed):not(.content--full) {
     @include media-breakpoint-up(xl) {
-      padding: ($header-height + $grid-gutter-width) $grid-gutter-width 0 $sidebar-width;
+      //padding: ($header-height + $grid-gutter-width) $grid-gutter-width 0 $sidebar-width;
+      padding: $header-height $grid-gutter-width 0 $sidebar-width;
     }
 
     @include media-breakpoint-between(sm, lg) {
