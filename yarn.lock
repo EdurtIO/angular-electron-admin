@@ -182,6 +182,13 @@
   dependencies:
     eslint-scope "^5.1.0"
 
+"@angular/animations@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-12.1.2.tgz#38bbb69da11ee0f5fc69c6742f9003243d5ede8c"
+  integrity sha512-gFRObY32h33tHI60NS0A6DXKL/Y9h8Efo3s2leIsInuYdxZBb7/vlJu4i5AJWEdFZNcY6TDBxK1vi37xlLdLlQ==
+  dependencies:
+    tslib "^2.2.0"
+
 "@angular/cli@12.1.2":
   version "12.1.2"
   resolved "https://registry.nlark.com/@angular/cli/download/@angular/cli-12.1.2.tgz#31bedb867bbfec5cf49b18b0666077c25f8a8e41"
@@ -6569,6 +6576,13 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
+
+ngx-bootstrap@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-7.1.0.tgz#60cd83b1d2da52ffd9f8ca6f270e77010d55cf5a"
+  integrity sha512-2qUTqq+DtimKpYNEga85G00zdMEZ2fcvtYaZkrdZRtwqyCXbPC69LXXzLkgu5697m83++iFWvwFp0IJDuGev1A==
+  dependencies:
+    tslib "^2.0.0"
 
 nice-try@^1.0.4:
   version "1.0.5"

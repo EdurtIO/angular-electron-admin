@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationService } from '@renderer/services/navigation.service';
+import { NavigationService } from '@renderer/services/layout/navigation.service';
 
 @Component({
   selector: 'app-navigation',

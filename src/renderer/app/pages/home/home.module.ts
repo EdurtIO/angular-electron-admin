@@ -1,8 +1,6 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-
 import { HomeComponent } from './home.component';
 
 const HOME_ROUTES: Routes = [
@@ -11,7 +9,6 @@ const HOME_ROUTES: Routes = [
 
 @NgModule({
   imports: [
-    CommonModule,
     FormsModule,
     RouterModule.forChild(HOME_ROUTES)
   ],
@@ -19,7 +16,7 @@ const HOME_ROUTES: Routes = [
   declarations: [
     HomeComponent
   ],
-  providers: [],
+  providers: []
 })
 // @ts-ignore
 export class HomeModule {
