@@ -1,0 +1,19 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>MATERIAL DESIGN ICONIC FONT <code>2.2.0</code></h1>
+    <small>This template is built using Material Design Iconic Font and has all the icon content</small>
+  </header>
+  <div *ngFor="let icon of icons" class="card icons-demo">
+    <div class="card-body">
+      <h4 class="card-title">{{icon.type}}</h4>
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let value of icon.icons">
+            <span>
+                <i class="zmdi {{value}}"></i>
+                <span>{{value}}</span>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
