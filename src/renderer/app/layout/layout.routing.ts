@@ -21,6 +21,15 @@ const LAYOUT_ROUTES: Routes = [
             loadChildren: () => import('../pages/icon/zmdi/zmdi.module').then(m => m.IconsZmdiModule)
           }
         ]
+      },
+      {
+        path: 'component',
+        children: [
+          {
+            path: 'clipboard',
+            loadChildren: () => import('../pages/component/clipboard/clipboard.module').then(m => m.ComponentClipboardModule)
+          }
+        ]
       }
     ]
   }

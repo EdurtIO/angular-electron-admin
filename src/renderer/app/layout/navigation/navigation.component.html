@@ -9,5 +9,14 @@
         </li>
       </ul>
     </li>
+    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+      <a (click)="toggleNavigationSub('Component', $event)">
+        <i class="zmdi zmdi-nature"></i> Component</a>
+      <ul [@toggleHeight]="navigationSubState.Component">
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/component/clipboard']">Clipboard</a>
+        </li>
+      </ul>
+    </li>
   </ul>
 </aside>

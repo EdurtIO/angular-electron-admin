@@ -24,7 +24,8 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 export class NavigationComponent implements OnInit {
   sidebarVisible: boolean;
   navigationSubState: any = {
-    Icon: 'inactive'
+    Icon: 'inactive',
+    Component: 'inactive'
   };
 
   constructor(private navigationService: NavigationService) {
