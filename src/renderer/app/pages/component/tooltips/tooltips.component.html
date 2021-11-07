@@ -1,0 +1,110 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Tooltips</h1>
+    <small>This template is built using <code>ngx-bootstrap/tooltip</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Content nested tooltips</h4>
+      <h6 class="card-subtitle">This is an example of content nesting tooltips</h6>
+      I am a
+      <a [routerLink]="['/component/tooltips']" tooltip="Tooltip">Tooltip</a> When the mouse moves over me, I pop it up.
+      <br/>I'm the other one
+      <a [routerLink]="['/component/tooltips']" tooltip="Another Tooltip">Tooltips(Mouse over to me)</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Bearing tooltips</h4>
+      <h6 class="card-subtitle">Here are examples of azimuth tooltips</h6>
+      <div class="btn-demo">
+        <button type="button" class="btn btn-primary" tooltip="On the left side of the display" placement="left">
+          On the left side of the display
+        </button>
+        <button type="button" class="btn btn-primary" tooltip="At the top of the display" placement="top">
+          At the top of the display
+        </button>
+        <button type="button" class="btn btn-primary" tooltip="At the bottom of the display" placement="bottom">
+          At the bottom of the display
+        </button>
+        <button type="button" class="btn btn-primary" tooltip="On the right" placement="right">
+          On the right
+        </button>
+        <button type="button" class="btn btn-primary" tooltip="Automatic position display" placement="auto">
+          Automatic position display
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Mouse click displays tooltips</h4>
+      <h6 class="card-subtitle">Here is an example of a mouse click displaying tooltips</h6>
+      <div class="btn-demo">
+        <button type="button" class="btn btn-primary" tooltip="Mouse click display" triggers="focus">
+          Mouse click display
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">The content delivered back end displays tooltips</h4>
+      <h6 class="card-subtitle">Here is an example of a back-end delivered content display tooltips</h6>
+      <div class="btn-demo">
+        <button type="button" class="btn btn-primary" [tooltip]="content">
+          Displays the content sent from the back end
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Display module contents tooltips</h4>
+      <h6 class="card-subtitle">Here is an example tooltips for displaying the contents of a module</h6>
+      <div class="btn-demo">
+        <ng-template #tolTemplate>I'm a module : {{content}}</ng-template>
+        <button type="button" class="btn btn-primary" [tooltip]="tolTemplate">
+          Display module contents
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Overlays show tooltips</h4>
+      <h6 class="card-subtitle">Here is an example of overwriting the display tooltips</h6>
+      <div class="btn-demo">
+        <div class="row" style="position: relative; overflow: hidden; padding-top: 10px;">
+          <div class="col-xs-12 col-12">
+            <button type="button" class="btn btn-danger" tooltip="The default tooltips">
+              The default tooltips
+            </button>
+            <button type="button" class="btn btn-success" tooltip="Overlays show tooltips" container="body">
+              Overlays show tooltips
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Control display tooltips</h4>
+      <h6 class="card-subtitle">Here is an example of a controlled display of tooltips</h6>
+      <div class="btn-demo">
+        <p>
+                    <span tooltip="Control show me oh" triggers="" #pop="bs-tooltip">
+                        Control show me oh
+                    </span>
+        </p>
+        <button type="button" class="btn btn-success" (click)="pop.show()">
+          Show
+        </button>
+        <button type="button" class="btn btn-warning" (click)="pop.hide()">
+          Hidden
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
