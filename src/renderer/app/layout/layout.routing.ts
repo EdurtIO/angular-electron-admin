@@ -28,6 +28,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'clipboard',
             loadChildren: () => import('../pages/component/clipboard/clipboard.module').then(m => m.ComponentClipboardModule)
+          },
+          {
+            path: 'tooltips',
+            loadChildren: () => import('../pages/component/tooltips/tooltips.module').then(m => m.TooltipsComponentModule)
           }
         ]
       }
