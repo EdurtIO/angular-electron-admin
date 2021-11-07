@@ -1,0 +1,25 @@
+<aside class="sidebar" [class.toggled]="sidebarVisible">
+  <ul class="navigation">
+    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+      <a (click)="toggleNavigationSub('Icon', $event)">
+        <i class="zmdi zmdi-share"></i> Icon</a>
+      <ul [@toggleHeight]="navigationSubState.Icon">
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/icon/zmdi']">ZMDI</a>
+        </li>
+      </ul>
+    </li>
+    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+      <a (click)="toggleNavigationSub('Component', $event)">
+        <i class="zmdi zmdi-nature"></i> Component</a>
+      <ul [@toggleHeight]="navigationSubState.Component">
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/component/clipboard']">Clipboard</a>
+        </li>
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/component/tooltips']">Tooltips</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside>

@@ -1,0 +1,24 @@
+<header class="header">
+  <app-navigation-trigger></app-navigation-trigger>
+  <div class="header__logo">
+    <h1>
+      <a [routerLink]="['/']">Angular Electron Admin</a>
+    </h1>
+  </div>
+  <ul class="top-nav">
+    <li dropdown class="d-none d-sm-inline-block">
+      <a dropdownToggle="">
+        Theme
+      </a>
+      <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown-menu--icon" role="menu">
+        <div class="dropdown-item theme-switch">
+          <div class="btn-group btn-group--colors mt-2 d-block">
+            <label *ngFor="let value of themes; let index" class="btn bg-{{value}}" [(ngModel)]="theme"
+                   btnRadio="{{value}}"
+                   uncheckable (click)="setTheme()"></label>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</header>

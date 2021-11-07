@@ -182,6 +182,13 @@
   dependencies:
     eslint-scope "^5.1.0"
 
+"@angular/animations@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-12.1.2.tgz#38bbb69da11ee0f5fc69c6742f9003243d5ede8c"
+  integrity sha512-gFRObY32h33tHI60NS0A6DXKL/Y9h8Efo3s2leIsInuYdxZBb7/vlJu4i5AJWEdFZNcY6TDBxK1vi37xlLdLlQ==
+  dependencies:
+    tslib "^2.2.0"
+
 "@angular/cli@12.1.2":
   version "12.1.2"
   resolved "https://registry.nlark.com/@angular/cli/download/@angular/cli-12.1.2.tgz#31bedb867bbfec5cf49b18b0666077c25f8a8e41"
@@ -2501,6 +2508,11 @@ boolean@^3.0.1:
   version "3.1.2"
   resolved "https://registry.nlark.com/boolean/download/boolean-3.1.2.tgz#e30f210a26b02458482a8cc353ab06f262a780c2"
   integrity sha1-4w8hCiawJFhIKozDU6sG8mKngMI=
+
+bootstrap@4.0.0-beta:
+  version "4.0.0-beta"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-beta.tgz#dc5928175d2e71310bc668cf9e05a907211b72a6"
+  integrity sha512-I/r3fYtUZr+rUNkh8HI+twxZ56p6ehNn27eA1XSebLVQKAJ2xZHnEvZrSR+UR2A/bONcd9gHC3xatVhQlH6R6w==
 
 boxen@^5.0.0:
   version "5.0.1"
@@ -6244,6 +6256,11 @@ matcher@^3.0.0:
   dependencies:
     escape-string-regexp "^4.0.0"
 
+material-design-iconic-font@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/material-design-iconic-font/-/material-design-iconic-font-2.2.0.tgz#66c3b1c880ef0cb87c02ca2a0f900ff0fe7f480d"
+  integrity sha1-ZsOxyIDvDLh8AsoqD5AP8P5/SA0=
+
 mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://registry.nlark.com/mdn-data/download/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
@@ -6564,6 +6581,28 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha1-tKr7k+OustgXTKU88WOrfXMIMF8=
+
+ngx-bootstrap@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-7.1.0.tgz#60cd83b1d2da52ffd9f8ca6f270e77010d55cf5a"
+  integrity sha512-2qUTqq+DtimKpYNEga85G00zdMEZ2fcvtYaZkrdZRtwqyCXbPC69LXXzLkgu5697m83++iFWvwFp0IJDuGev1A==
+  dependencies:
+    tslib "^2.0.0"
+
+ngx-clipboard@^14.0.1:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-clipboard/-/ngx-clipboard-14.0.1.tgz#fe977ee115f50f6a589487f6f99fa5eef5203763"
+  integrity sha512-y6fDrvAso1cbM+VvHgB2kJ3dcQ/EBPol33nLaqqKB1jNO/Kd3l17EHdXNW/oKY0wUKCHk7ZCuiinREgUHEYfXg==
+  dependencies:
+    ngx-window-token ">=4.0.0"
+    tslib "^2.0.0"
+
+ngx-window-token@>=4.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-window-token/-/ngx-window-token-5.0.0.tgz#ca63a25038c9fdd73159857276ff67ec7f5b730b"
+  integrity sha512-DhigCrm9QO8R29lqJYzBC9aaTU0KiWgdnt8RNcTN/DvMaS7shfzAqyvUtxSIm/+JR4gW5JKqR/JODU8760nJMw==
+  dependencies:
+    tslib "^2.0.0"
 
 nice-try@^1.0.4:
   version "1.0.5"

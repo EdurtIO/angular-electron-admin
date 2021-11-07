@@ -1,0 +1,47 @@
+.timepicker {
+  .form-control {
+    text-align: center;
+    border: 1px solid $input-border-color;
+    font-weight: $font-weight-bold;
+    color: $headings-color;
+  }
+
+  table {
+    & > tbody {
+      & > tr {
+        &.hidden {
+          display: none;
+        }
+
+        & > td {
+          text-align: center;
+
+          .btn {
+            &:not(.btn-link) {
+              border-radius: 0;
+              border: 1px solid $input-border-color !important;
+              background-color: transparent;
+              height: 32px;
+              margin-left: 5px;
+              box-shadow: none;
+            }
+          }
+          
+          & > a:hover {
+            .bs-chevron {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bs-chevron {
+  border-width: 2px 0 0 2px !important;
+  width: 8px !important;
+  height: 8px !important;
+  opacity: 0.4;
+  @include transition(opacity 200ms);
+}

@@ -1,0 +1,22 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Clipboard</h1>
+    <small>This template is built using <code>ngx-clipboard</code> and provides some usage examples</small>
+  </header>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Simple Example</h4>
+        <div class="card-text">
+          <div class="input-group">
+            <div class="form-group">
+              <input type="text" class="form-control" [(ngModel)]="text" #inputTarget>
+              <i class="form-group__bar"></i>
+            </div>
+            <button class="btn btn-info" [ngxClipboard]="inputTarget">Click me to copy content</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+// Import Bootstrap and App variables and mixins
+@import "../../../assets/scss/inner-imports";
+
+.navigation-trigger {
+  float: left;
+  padding: 2rem 2rem 2rem 2.4rem;
+  margin-left: -2rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.toggled {
+    .navigation-trigger__inner {
+      transform: rotate(180deg);
+
+      &:before {
+        transform: scale(1);
+      }
+    }
+
+    .navigation-trigger__line {
+      &:first-child {
+        width: 12px;
+        transform: translateX(8px) translateY(1px) rotate(45deg);
+      }
+
+      &:last-child {
+        width: 11px;
+        transform: translateX(8px) translateY(-1px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.navigation-trigger__inner,
+.navigation-trigger__line {
+  width: 18px;
+  @include transition(all 300ms);
+}
+
+.navigation-trigger__inner {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -11px;
+    top: -14px;
+    background-color: rgba($white, 0.25);
+    border-radius: 50%;
+    @include transition(all 300ms);
+    transform: scale(0);
+  }
+}
+
+.navigation-trigger__line {
+  height: 2px;
+  background-color: $white;
+  display: block;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+}

@@ -1,0 +1,65 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+// Site, Bootstrap, Variable, Mixins
+@import "./assets/scss/variables";
+@import "./assets/scss/mixins";
+@import "./assets/scss/bootstrap-overrides/mixins";
+@import "./assets/scss/bootstrap-imports";
+@import "./assets/scss/_login";
+@import "./assets/scss/generics";
+@import "./assets/scss/base";
+@import "./assets/scss/layout";
+@import "./assets/scss/charts";
+@import "./assets/scss/toggle-switch";
+@import "./assets/scss/listview";
+@import "./assets/scss/page-loader";
+@import "./assets/scss/theme";
+@import "./assets/scss/color";
+
+// Bootstrap Overrides
+@import "./assets/scss/bootstrap-overrides/dropdown";
+@import "./assets/scss/bootstrap-overrides/media";
+@import "./assets/scss/bootstrap-overrides/progress";
+@import "./assets/scss/bootstrap-overrides/card";
+@import "./assets/scss/bootstrap-overrides/buttons";
+@import "./assets/scss/bootstrap-overrides/tables";
+@import "./assets/scss/bootstrap-overrides/forms";
+@import "./assets/scss/bootstrap-overrides/input-groups";
+@import "./assets/scss/bootstrap-overrides/custom-forms";
+@import "./assets/scss/bootstrap-overrides/pagination";
+@import "./assets/scss/bootstrap-overrides/datepicker";
+@import "./assets/scss/bootstrap-overrides/timepicker";
+@import "./assets/scss/bootstrap-overrides/alerts";
+@import "./assets/scss/bootstrap-overrides/close";
+@import "./assets/scss/bootstrap-overrides/breadcrumbs";
+@import "./assets/scss/bootstrap-overrides/accordion";
+@import "./assets/scss/bootstrap-overrides/carousel";
+@import "./assets/scss/bootstrap-overrides/modal";
+@import "./assets/scss/bootstrap-overrides/popovers";
+@import "./assets/scss/bootstrap-overrides/ratings";
+@import "./assets/scss/bootstrap-overrides/sortable";
+@import "./assets/scss/bootstrap-overrides/tabs";
+@import "./assets/scss/bootstrap-overrides/tooltip";
+@import "./assets/scss/datepicker.scss";
+
+// Vendor Overrides
+@import "./assets/scss/vendor-overrides/flot";
+@import "./assets/scss/vendor-overrides/sparklines";
+@import "./assets/scss/vendor-overrides/select2";
+@import "./assets/scss/vendor-overrides/dropzone";
+@import "./assets/scss/vendor-overrides/angular2-color-picker";
+@import "./assets/scss/vendor-overrides/nouislider";
+@import "./assets/scss/vendor-overrides/easypiecharts";
+@import "./assets/scss/vendor-overrides/perfect-scrollbar";
+
+// App Global Styles
+@import "./assets/scss/misc";
+
+.card-demo {
+  vertical-align: top;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 $grid-gutter-width 0 0;
+  display: inline-block;
+}
