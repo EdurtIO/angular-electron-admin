@@ -19,6 +19,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'zmdi',
             loadChildren: () => import('../pages/icon/zmdi/zmdi.module').then(m => m.IconsZmdiModule)
+          },
+          {
+            path: 'fa',
+            loadChildren: () => import('../pages/icon/fa/fa.module').then(m => m.IconsFaModule)
           }
         ]
       },
@@ -32,6 +36,15 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'tooltips',
             loadChildren: () => import('../pages/component/tooltips/tooltips.module').then(m => m.TooltipsComponentModule)
+          }
+        ]
+      },
+      {
+        path: 'directive',
+        children: [
+          {
+            path: 'contribution',
+            loadChildren: () => import('../pages/directive/contribution/contribution.module').then(m => m.DirectiveContributionModule)
           }
         ]
       }
