@@ -19,6 +19,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'zmdi',
             loadChildren: () => import('../pages/icon/zmdi/zmdi.module').then(m => m.IconsZmdiModule)
+          },
+          {
+            path: 'fa',
+            loadChildren: () => import('../pages/icon/fa/fa.module').then(m => m.IconsFaModule)
           }
         ]
       },

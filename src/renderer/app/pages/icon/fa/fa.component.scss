@@ -1,0 +1,17 @@
+.icons-demo {
+  .card-body {
+    .fa {
+      font-size: 1.7rem;
+      vertical-align: bottom;
+      margin-right: 1rem;
+    }
+
+    .col-sm-4 {
+      padding: 0.8rem 1.1rem;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.03);
+      }
+    }
+  }
+}

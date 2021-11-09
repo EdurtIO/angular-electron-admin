@@ -1,6 +1,6 @@
 {
   "name": "angular-electron-admin",
-  "version": "1.0.0-SNAPSHOT",
+  "version": "1.1.0-SNAPSHOT",
   "description": "Angular Electron Admin Template",
   "homepage": "https://aea.incubator.edurt.io",
   "author": {
@@ -41,6 +41,7 @@
     "@angular/platform-browser-dynamic": "12.1.2",
     "@angular/router": "12.1.2",
     "bootstrap": "4.0.0-beta",
+    "font-awesome": "^4.7.0",
     "material-design-iconic-font": "^2.2.0",
     "ngx-bootstrap": "^7.1.0",
     "ngx-clipboard": "^14.0.1",
