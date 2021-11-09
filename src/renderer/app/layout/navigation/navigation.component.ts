@@ -25,7 +25,8 @@ export class NavigationComponent implements OnInit {
   sidebarVisible: boolean;
   navigationSubState: any = {
     Icon: 'inactive',
-    Component: 'inactive'
+    Component: 'inactive',
+    Directive: 'inactive'
   };
 
   constructor(private navigationService: NavigationService) {

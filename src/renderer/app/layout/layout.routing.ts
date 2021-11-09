@@ -38,6 +38,15 @@ const LAYOUT_ROUTES: Routes = [
             loadChildren: () => import('../pages/component/tooltips/tooltips.module').then(m => m.TooltipsComponentModule)
           }
         ]
+      },
+      {
+        path: 'directive',
+        children: [
+          {
+            path: 'contribution',
+            loadChildren: () => import('../pages/directive/contribution/contribution.module').then(m => m.DirectiveContributionModule)
+          }
+        ]
       }
     ]
   }

@@ -5,10 +5,10 @@
         <i class="zmdi zmdi-share"></i> Icon</a>
       <ul [@toggleHeight]="navigationSubState.Icon">
         <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/icon/zmdi']">Material Icon</a>
+          <a [routerLink]="['/icon/zmdi']"><i class="fa fa-id-card-o"></i> Material Icon</a>
         </li>
         <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/icon/fa']">Fa Icon</a>
+          <a [routerLink]="['/icon/fa']"><i class="fa fa-fax"></i> Fa Icon</a>
         </li>
       </ul>
     </li>
@@ -17,10 +17,19 @@
         <i class="zmdi zmdi-nature"></i> Component</a>
       <ul [@toggleHeight]="navigationSubState.Component">
         <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/clipboard']">Clipboard</a>
+          <a [routerLink]="['/component/clipboard']"><i class="fa fa-clipboard"></i> Clipboard</a>
         </li>
         <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/tooltips']">Tooltips</a>
+          <a [routerLink]="['/component/tooltips']"><i class="fa fa-tripadvisor"></i> Tooltips</a>
+        </li>
+      </ul>
+    </li>
+    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+      <a (click)="toggleNavigationSub('Directive', $event)">
+        <i class="zmdi zmdi-chart"></i> Directive</a>
+      <ul [@toggleHeight]="navigationSubState.Directive">
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/directive/contribution']"><i class="fa fa-connectdevelop"></i> Contribution</a>
         </li>
       </ul>
     </li>

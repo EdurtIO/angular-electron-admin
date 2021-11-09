@@ -1,0 +1,35 @@
+:host {
+  position: relative;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+:host > > > .item {
+  cursor: pointer;
+}
+
+:host > > > .label {
+  cursor: pointer;
+  fill: rgb(170, 170, 170);
+}
+
+:host > > > .heatmap-tooltip {
+  pointer-events: none;
+  position: absolute;
+  z-index: 9999;
+  overflow: hidden;
+  padding: 0.3rem;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgb(51, 51, 51);
+  background: #495057;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
