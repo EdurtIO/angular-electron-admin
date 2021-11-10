@@ -47,6 +47,7 @@
     "moment": "^2.29.1",
     "ngx-bootstrap": "^7.1.0",
     "ngx-clipboard": "^14.0.1",
+    "ngx-perfect-scrollbar": "^10.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
