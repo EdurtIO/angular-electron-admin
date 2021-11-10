@@ -36,6 +36,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'tooltips',
             loadChildren: () => import('../pages/component/tooltips/tooltips.module').then(m => m.TooltipsComponentModule)
+          },
+          {
+            path: 'scrollbar',
+            loadChildren: () => import('../pages/component/scrollbar/scrollbar.module').then(m => m.ScrollbarModule)
           }
         ]
       },
