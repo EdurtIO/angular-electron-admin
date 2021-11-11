@@ -48,6 +48,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'carousel',
             loadChildren: () => import('../pages/component/carousel/carousel.module').then(m => m.CarouselComponentModule)
+          },
+          {
+            path: 'progressbar',
+            loadChildren: () => import('../pages/component/progressbar/progressbar.module').then(m => m.ProgressbarComponentModule)
           }
         ]
       },
