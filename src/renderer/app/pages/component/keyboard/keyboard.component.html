@@ -1,0 +1,19 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Keyboard</h1>
+    <small>This template is built using <code>simple-keyboard</code> and provides some usage examples</small>
+  </header>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Keyboard</h4>
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" (input)="onInputChange($event)" value="{{value}}"
+                 placeholder="Tap on the virtual keyboard to start">
+          <i class="form-group__bar"></i>
+        </div>
+        <div class="simple-keyboard"></div>
+      </div>
+    </div>
+  </div>
+</section>

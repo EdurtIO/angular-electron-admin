@@ -1,0 +1,43 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Progressbar</h1>
+    <small>This template is built using <code>ngx-bootstrap/progressbar</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Static Progressbar</h4>
+      <progressbar class="progress" value="0" max="100"></progressbar>
+      <br>
+      <progressbar class="progress" value="25" max="100"></progressbar>
+      <br>
+      <progressbar class="progress" value="50" max="100"></progressbar>
+      <br>
+      <progressbar class="progress" value="75" max="100"></progressbar>
+      <br>
+      <progressbar class="progress" value="100" max="100"></progressbar>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Theme Progressbar</h4>
+      <h6 class="card-subtitle">Theme
+        <code>type</code> property implementation adds a topic to the Progressbar</h6>
+      <progressbar class="progress" value="25" max="100" [type]="'success'"></progressbar>
+      <br>
+      <progressbar class="progress" value="50" max="100" [type]="'warning'"></progressbar>
+      <br>
+      <progressbar class="progress" value="75" max="100" type="info"></progressbar>
+      <br>
+      <progressbar class="progress" value="100" max="100" type="danger"></progressbar>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Dynamic Progressbar</h4>
+      <progressbar class="progress" [value]="stacked" max="100"></progressbar>
+      <hr>
+      <br>
+      <button type="button" class="btn btn-primary" (click)="randomStacked()">Click</button>
+    </div>
+  </div>
+</section>

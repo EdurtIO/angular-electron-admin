@@ -19,6 +19,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'zmdi',
             loadChildren: () => import('../pages/icon/zmdi/zmdi.module').then(m => m.IconsZmdiModule)
+          },
+          {
+            path: 'fa',
+            loadChildren: () => import('../pages/icon/fa/fa.module').then(m => m.IconsFaModule)
           }
         ]
       },
@@ -32,6 +36,35 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'tooltips',
             loadChildren: () => import('../pages/component/tooltips/tooltips.module').then(m => m.TooltipsComponentModule)
+          },
+          {
+            path: 'scrollbar',
+            loadChildren: () => import('../pages/component/scrollbar/scrollbar.module').then(m => m.ScrollbarModule)
+          },
+          {
+            path: 'datepicker',
+            loadChildren: () => import('../pages/component/datepicker/datepicker.module').then(m => m.DatepickerModule)
+          },
+          {
+            path: 'carousel',
+            loadChildren: () => import('../pages/component/carousel/carousel.module').then(m => m.CarouselComponentModule)
+          },
+          {
+            path: 'progressbar',
+            loadChildren: () => import('../pages/component/progressbar/progressbar.module').then(m => m.ProgressbarComponentModule)
+          },
+          {
+            path: 'keyboard',
+            loadChildren: () => import('../pages/component/keyboard/keyboard.module').then(m => m.KeyboardModule)
+          }
+        ]
+      },
+      {
+        path: 'directive',
+        children: [
+          {
+            path: 'contribution',
+            loadChildren: () => import('../pages/directive/contribution/contribution.module').then(m => m.DirectiveContributionModule)
           }
         ]
       }

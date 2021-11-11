@@ -1,0 +1,25 @@
+.content-container {
+  position: relative;
+  overflow: auto;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  min-height: 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.scroll-container {
+  position: relative;
+}
+
+.scrollable-content {
+  padding: 2px;
+  height: 100px;
+  margin: 0;
+}
+
+.no-space {
+  white-space: nowrap;
+}

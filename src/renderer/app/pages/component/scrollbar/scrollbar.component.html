@@ -1,0 +1,102 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Scrollbar</h1>
+    <small>This template is built using <code>ngx-perfect-scrollbar</code> and provides some usage examples</small>
+  </header>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Returns the top</h4>
+        <div class="btn-demo">
+          <button class="btn btn-light" (click)='goToTop()'>Returns the top</button>
+        </div>
+        <div class="content-container">
+          <div [perfectScrollbar] #goToTopScroll="ngxPerfectScrollbar" class="scroll-container">
+            <div class="scrollable-content">
+              <p *ngFor="let index of data">
+                I,m {{index}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Returns the bottom</h4>
+        <div class="btn-demo">
+          <button class="btn btn-light" (click)='goToBottom()'>Returns the bottom</button>
+        </div>
+        <div class="content-container">
+          <div [perfectScrollbar] #goToBottomScroll="ngxPerfectScrollbar" class="scroll-container">
+            <div class="scrollable-content">
+              <p *ngFor="let index of data">
+                I,m {{index}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">At position</h4>
+        <div class="btn-demo">
+          <button class="btn btn-light" (click)='goToXY(25, 50)'>At position(25,50)</button>
+        </div>
+        <div class="content-container">
+          <div [perfectScrollbar] #goToXYScroll="ngxPerfectScrollbar" class="scroll-container">
+            <div class="scrollable-content">
+              <p *ngFor="let index of data">
+                I,m {{index}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Go to Left</h4>
+        <div class="btn-demo">
+          <button class="btn btn-light" (click)='goToLeft()'>Go to Left</button>
+        </div>
+        <div class="content-container">
+          <div [perfectScrollbar] #goToLeftScroll="ngxPerfectScrollbar" class="scroll-container">
+            <div class="scrollable-content no-space">
+              <span *ngFor="let index of data">
+                I,m {{index}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Go to Right</h4>
+        <div class="btn-demo">
+          <button class="btn btn-light" (click)='goToRight()'>Go to Right</button>
+        </div>
+        <div class="content-container">
+          <div [perfectScrollbar] #goToRightScroll="ngxPerfectScrollbar" class="scroll-container">
+            <div class="scrollable-content no-space">
+              <span *ngFor="let index of data">
+                I,m {{index}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <perfect-scrollbar></perfect-scrollbar>
+</section>

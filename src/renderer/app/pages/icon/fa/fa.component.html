@@ -1,0 +1,19 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Font Awesome <code>4.7.0</code></h1>
+    <small>This template is built using Font Awesome and has all the icon content</small>
+  </header>
+  <div *ngFor="let icon of icons" class="card icons-demo">
+    <div class="card-body">
+      <h4 class="card-title">{{icon.type}}</h4>
+      <div class="row">
+        <div *ngFor="let value of icon.icons" class="col-sm-4">
+            <span>
+                <i class="fa {{value}}"></i>
+                <span>{{value}}</span>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
