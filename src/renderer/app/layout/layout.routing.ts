@@ -44,6 +44,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'datepicker',
             loadChildren: () => import('../pages/component/datepicker/datepicker.module').then(m => m.DatepickerModule)
+          },
+          {
+            path: 'carousel',
+            loadChildren: () => import('../pages/component/carousel/carousel.module').then(m => m.CarouselComponentModule)
           }
         ]
       },
