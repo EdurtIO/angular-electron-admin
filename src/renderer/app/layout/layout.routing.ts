@@ -40,6 +40,18 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'scrollbar',
             loadChildren: () => import('../pages/component/scrollbar/scrollbar.module').then(m => m.ScrollbarModule)
+          },
+          {
+            path: 'datepicker',
+            loadChildren: () => import('../pages/component/datepicker/datepicker.module').then(m => m.DatepickerModule)
+          },
+          {
+            path: 'carousel',
+            loadChildren: () => import('../pages/component/carousel/carousel.module').then(m => m.CarouselComponentModule)
+          },
+          {
+            path: 'progressbar',
+            loadChildren: () => import('../pages/component/progressbar/progressbar.module').then(m => m.ProgressbarComponentModule)
           }
         ]
       },

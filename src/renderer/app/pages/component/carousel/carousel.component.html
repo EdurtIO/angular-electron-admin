@@ -1,0 +1,30 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Carousel</h1>
+    <small>This template is built using <code>ngx-bootstrap/carousel</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Default</h4>
+      <carousel>
+        <slide *ngFor="let img of defaultCarousels">
+          <img src="{{img.url}}" alt="{{img.title}}" style="height: 200px;">
+        </slide>
+      </carousel>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Description</h4>
+      <carousel>
+        <slide *ngFor="let img of defaultCarousels">
+          <img src="{{img.url}}" alt="{{img.title}}" style="height: 200px;">
+          <div class="carousel-caption">
+            <h3>{{img.title}}</h3>
+            <p>{{img.description}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</section>

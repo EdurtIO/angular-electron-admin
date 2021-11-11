@@ -1,0 +1,53 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Datepicker</h1>
+    <small>This template is built using <code>ngx-bootstrap/datepicker</code> and provides some usage examples</small>
+  </header>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Basic Datepicker</h4>
+        <div class="form-group">
+          <input type="text" class="form-control" [minDate]="minDate" [maxDate]="maxDate" #dp="bsDatepicker"
+                 bsDatepicker [(bsValue)]="bsValue">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success" (click)="dp.toggle()">Basic Datepicker</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Range Datepicker</h4>
+        <div class="form-group">
+          <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success" (click)="drp.toggle()">Range Datepicker</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-demo">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Theme Datepicker</h4>
+        <div class="form-group">
+          <select class="custom-select form-control " [(ngModel)]="colorTheme" (ngModelChange)="applyTheme(dpTheme);">
+            <option *ngFor="let theme of colorThemes" value="{{theme}}">{{theme}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" bsDatepicker #dpTheme="bsDatepicker" [bsConfig]="bsConfig">
+            <div class="input-group-btn">
+              <button class="btn btn-success" (click)="dpTheme.show() ">Theme Datepicker</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
