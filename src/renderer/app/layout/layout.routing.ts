@@ -52,6 +52,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'progressbar',
             loadChildren: () => import('../pages/component/progressbar/progressbar.module').then(m => m.ProgressbarComponentModule)
+          },
+          {
+            path: 'keyboard',
+            loadChildren: () => import('../pages/component/keyboard/keyboard.module').then(m => m.KeyboardModule)
           }
         ]
       },
