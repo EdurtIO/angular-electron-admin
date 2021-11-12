@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
+import { ForbiddenComponent } from '@renderer/app/pages/error/forbidden/forbidden.component';
 
 const LAYOUT_ROUTES: Routes = [
   {
@@ -65,6 +66,15 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'contribution',
             loadChildren: () => import('../pages/directive/contribution/contribution.module').then(m => m.DirectiveContributionModule)
+          }
+        ]
+      },
+      {
+        path: 'error',
+        children: [
+          {
+            path: '403',
+            component: ForbiddenComponent
           }
         ]
       }
