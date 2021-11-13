@@ -37,6 +37,12 @@
         <li routerLinkActive="navigation__active">
           <a [routerLink]="['/component/keyboard']"><i class="fa fa-keyboard-o"></i> Keyboard</a>
         </li>
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/component/sortable']"><i class="fa fa-sort"></i> Sortable</a>
+        </li>
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/component/rating']"><i class="fa fa-random"></i> Rating</a>
+        </li>
       </ul>
     </li>
     <li routerLinkActive="navigation__sub--active" class="navigation__sub">
@@ -45,6 +51,18 @@
       <ul [@toggleHeight]="navigationSubState.Directive">
         <li routerLinkActive="navigation__active">
           <a [routerLink]="['/directive/contribution']"><i class="fa fa-connectdevelop"></i> Contribution</a>
+        </li>
+      </ul>
+    </li>
+    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+      <a (click)="toggleNavigationSub('Error', $event)">
+        <i class="zmdi zmdi-smartphone-erase"></i> Error</a>
+      <ul [@toggleHeight]="navigationSubState.Error">
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/error/403']"><i class="fa fa-navicon"></i> Forbidden(403)</a>
+        </li>
+        <li routerLinkActive="navigation__active">
+          <a [routerLink]="['/error/404']"><i class="fa fa-newspaper-o"></i> NotFound(404)</a>
         </li>
       </ul>
     </li>
