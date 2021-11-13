@@ -62,6 +62,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'sortable',
             loadChildren: () => import('../pages/component/sortable/sortable.module').then(m => m.SortableComponentModule)
+          },
+          {
+            path: 'rating',
+            loadChildren: () => import('../pages/component/rating/rating.module').then(m => m.RatingComponentModule)
           }
         ]
       },
