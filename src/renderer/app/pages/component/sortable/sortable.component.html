@@ -1,0 +1,26 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Sortable</h1>
+    <small>This template is built using <code>ngx-bootstrap/sortable</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Basic Sortable</h4>
+      <bs-sortable [(ngModel)]="sortableData" itemClass="sortable__item" itemActiveClass="sortable__active"
+                   placeholderItem="Drag here"
+                   placeholderClass="sortable__placeholder" wrapperClass="sortable">
+      </bs-sortable>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Echo Sortable</h4>
+      <bs-sortable [(ngModel)]="sortableComplexData" fieldName="name" itemClass="sortable__item"
+                   itemActiveClass="sortable__active"
+                   placeholderItem="Drag here" placeholderClass="sortable__placeholder" wrapperClass="sortable">
+      </bs-sortable>
+      <br>
+      <pre>{{ sortableComplexData | json }}</pre>
+    </div>
+  </div>
+</section>

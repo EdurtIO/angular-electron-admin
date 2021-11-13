@@ -58,6 +58,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'keyboard',
             loadChildren: () => import('../pages/component/keyboard/keyboard.module').then(m => m.KeyboardModule)
+          },
+          {
+            path: 'sortable',
+            loadChildren: () => import('../pages/component/sortable/sortable.module').then(m => m.SortableComponentModule)
           }
         ]
       },
