@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 import { ForbiddenComponent } from '@renderer/app/pages/error/forbidden/forbidden.component';
+import { NotfoundComponent } from '@renderer/app/pages/error/notfound/notfound.component';
 
 const LAYOUT_ROUTES: Routes = [
   {
@@ -75,6 +76,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: '403',
             component: ForbiddenComponent
+          },
+          {
+            path: '404',
+            component: NotfoundComponent
           }
         ]
       }
