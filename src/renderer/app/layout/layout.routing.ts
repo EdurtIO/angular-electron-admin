@@ -66,6 +66,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'rating',
             loadChildren: () => import('../pages/component/rating/rating.module').then(m => m.RatingComponentModule)
+          },
+          {
+            path: 'alert',
+            loadChildren: () => import('../pages/component/alert/alert.module').then(m => m.AlertsComponentModule)
           }
         ]
       },
