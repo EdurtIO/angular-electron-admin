@@ -70,6 +70,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'alert',
             loadChildren: () => import('../pages/component/alert/alert.module').then(m => m.AlertsComponentModule)
+          },
+          {
+            path: 'tabs',
+            loadChildren: () => import('../pages/component/tabs/tabs.module').then(m => m.TabsComponentModule)
           }
         ]
       },
