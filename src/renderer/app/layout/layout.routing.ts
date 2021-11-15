@@ -74,6 +74,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'tabs',
             loadChildren: () => import('../pages/component/tabs/tabs.module').then(m => m.TabsComponentModule)
+          },
+          {
+            path: 'toasty',
+            loadChildren: () => import('../pages/component/toasty/toasty.module').then(m => m.ToastyComponentModule)
           }
         ]
       },
