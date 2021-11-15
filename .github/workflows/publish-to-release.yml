@@ -1,0 +1,23 @@
+name: Publish New Release
+
+on:
+  pull_request:
+    branch:
+      - 'master'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        with:
+          tag_name: 1.2.0-SNAPSHOT
+          release_name: 1.2.0-SNAPSHOT
+          draft: false
+          prerelease: false
+    outputs:
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
