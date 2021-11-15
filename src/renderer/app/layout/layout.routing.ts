@@ -83,6 +83,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'contribution',
             loadChildren: () => import('../pages/directive/contribution/contribution.module').then(m => m.DirectiveContributionModule)
+          },
+          {
+            path: 'screenshot',
+            loadChildren: () => import('../pages/directive/screenshot/screenshot.module').then(m => m.DirectiveScreenshotModule)
           }
         ]
       },

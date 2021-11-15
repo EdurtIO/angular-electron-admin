@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-body">
+    <p>Screenshot</p>
+    <button class="btn btn-primary btn-sm btn--icon" (click)="modal.show()">
+      <i class="fa fa-camera-retro"></i>
+    </button>
+    <div bsModal #modal="bs-modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Screenshot</h5>
+          </div>
+          <div class="modal-body">
+            <img width="100%" src="{{screenshotImage}}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
