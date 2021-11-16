@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
 import * as d3 from 'd3';
+import { PackageUtils } from '@renderer/utils/package.utils';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,10 @@ import * as d3 from 'd3';
 })
 export class DirectiveContributionComponent implements OnInit {
   public data;
+  public version: string;
 
   constructor() {
+    this.version = PackageUtils.get('version');
   }
 
   ngOnInit(): void {
