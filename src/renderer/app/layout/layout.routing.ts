@@ -1,5 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
+import { ForbiddenComponent } from '@renderer/app/pages/error/forbidden/forbidden.component';
+import { NotfoundComponent } from '@renderer/app/pages/error/notfound/notfound.component';
 
 const LAYOUT_ROUTES: Routes = [
   {
@@ -56,6 +58,34 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'keyboard',
             loadChildren: () => import('../pages/component/keyboard/keyboard.module').then(m => m.KeyboardModule)
+          },
+          {
+            path: 'sortable',
+            loadChildren: () => import('../pages/component/sortable/sortable.module').then(m => m.SortableComponentModule)
+          },
+          {
+            path: 'rating',
+            loadChildren: () => import('../pages/component/rating/rating.module').then(m => m.RatingComponentModule)
+          },
+          {
+            path: 'alert',
+            loadChildren: () => import('../pages/component/alert/alert.module').then(m => m.AlertsComponentModule)
+          },
+          {
+            path: 'tabs',
+            loadChildren: () => import('../pages/component/tabs/tabs.module').then(m => m.TabsComponentModule)
+          },
+          {
+            path: 'toasty',
+            loadChildren: () => import('../pages/component/toasty/toasty.module').then(m => m.ToastyComponentModule)
+          },
+          {
+            path: 'typeahead',
+            loadChildren: () => import('../pages/component/typeahead/typeahead.module').then(m => m.TypeaheadComponentModule)
+          },
+          {
+            path: 'timepicker',
+            loadChildren: () => import('../pages/component/timepicker/timepicker.module').then(m => m.TimepickerComponentModule)
           }
         ]
       },
@@ -65,6 +95,23 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'contribution',
             loadChildren: () => import('../pages/directive/contribution/contribution.module').then(m => m.DirectiveContributionModule)
+          },
+          {
+            path: 'screenshot',
+            loadChildren: () => import('../pages/directive/screenshot/screenshot.module').then(m => m.DirectiveScreenshotModule)
+          }
+        ]
+      },
+      {
+        path: 'error',
+        children: [
+          {
+            path: '403',
+            component: ForbiddenComponent
+          },
+          {
+            path: '404',
+            component: NotfoundComponent
           }
         ]
       }

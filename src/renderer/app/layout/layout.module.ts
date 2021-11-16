@@ -10,6 +10,15 @@ import { ThemeService } from '@renderer/services/layout/theme.service';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { CommonModule } from '@angular/common';
+import {
+  PERFECT_SCROLLBAR_CONFIG,
+  PerfectScrollbarConfigInterface,
+  PerfectScrollbarModule
+} from 'ngx-perfect-scrollbar';
+
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true
+};
 
 @NgModule({
   declarations: [
@@ -23,9 +32,14 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     BsDropdownModule.forRoot(),
     ButtonsModule,
-    CommonModule
+    CommonModule,
+    PerfectScrollbarModule
   ],
   providers: [
+    {
+      provide: PERFECT_SCROLLBAR_CONFIG,
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+    },
     NavigationService,
     ThemeService
   ]

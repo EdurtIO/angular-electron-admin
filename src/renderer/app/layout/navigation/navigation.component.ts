@@ -26,7 +26,8 @@ export class NavigationComponent implements OnInit {
   navigationSubState: any = {
     Icon: 'inactive',
     Component: 'inactive',
-    Directive: 'inactive'
+    Directive: 'inactive',
+    Error: 'inactive'
   };
 
   constructor(private navigationService: NavigationService) {
