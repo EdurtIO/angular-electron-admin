@@ -82,6 +82,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'typeahead',
             loadChildren: () => import('../pages/component/typeahead/typeahead.module').then(m => m.TypeaheadComponentModule)
+          },
+          {
+            path: 'timepicker',
+            loadChildren: () => import('../pages/component/timepicker/timepicker.module').then(m => m.TimepickerComponentModule)
           }
         ]
       },
