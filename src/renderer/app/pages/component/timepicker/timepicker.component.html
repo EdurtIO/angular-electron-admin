@@ -1,0 +1,48 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Timepicker</h1>
+    <small>This template is built using <code>ngx-bootstrap/timepicker</code> and provides some usage examples</small>
+  </header>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Timepicker</h4>
+          <timepicker [(ngModel)]="timePickerValue" [readonlyInput]="!isTimePickerEnabled"
+                      class="timepicker"></timepicker>
+          <div class="form-group mt-4">
+            <input type="text" value="{{timePickerValue | date:'shortTime'}}" class="form-control">
+            <i class="form-group__bar"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">24 hours Timepicker</h4>
+          <timepicker [(ngModel)]="timePickerMeridianValue" [readonlyInput]="!isTimePickerEnabled" class="timepicker"
+                      [showMeridian]="false"></timepicker>
+          <div class="form-group mt-4">
+            <input type="text" value="{{timePickerMeridianValue | date: 'HH:mm'}}" class="form-control">
+            <i class="form-group__bar"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Custom Timepicker</h4>
+          <timepicker [(ngModel)]="timePickerValue" [readonlyInput]="!isTimePickerEnabled" [hourStep]="2"
+                      [minuteStep]="1" class="timepicker"></timepicker>
+          <div class="form-group mt-4">
+            <input type="text" value="{{timePickerValue | date:'shortTime'}}" class="form-control">
+            <i class="form-group__bar"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="isTimePickerEnabled=!isTimePickerEnabled">Enabling/Disabling</button>
+</section>

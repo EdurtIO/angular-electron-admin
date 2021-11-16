@@ -1,0 +1,60 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Rating</h1>
+    <small>This template is built using <code>ngx-bootstrap/rating</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Static Rating</h4>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="10"></rating>
+      <br>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="15"></rating>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Readonly Rating</h4>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="10" [readonly]="true"></rating>
+      <br>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="15" [readonly]="true"></rating>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Dynamic Rating</h4>
+      <rating class="ratings" [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" (onHover)="hoveringOver($event)"
+              (onLeave)="resetStar()"
+              [titles]="['one','two','three']">
+      </rating>
+      <span class="dynamic-ratings-label"
+            [ngClass]="{'dynamic-ratings-label--negative': percent<30, 'dynamic-ratings-label--normal': percent>=30 && percent<70, 'dynamic-ratings-label--positive': percent>=70}"
+            [ngStyle]="{display: (overStar && !isReadonly) ? 'inline' : 'none'}">{{percent}}%
+            </span>
+      <br>
+      <pre>Ranger: <b>{{rate}}</b>;  Readonly: <i>{{isReadonly}}</i>;  Point to the range: <b>{{overStar || "none"}}</b></pre>
+      <br>
+      <div>
+        <button type="button" class="btn btn-primary" (click)="rate = 0" [disabled]="isReadonly">Clear</button>
+        <button type="button" class="btn btn-primary" (click)="isReadonly = ! isReadonly">Readonly</button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Theme Rating</h4>
+      <h6 class="card-subtitle">ou can still use
+        <a [routerLink]="['/icon/zmdi']">Icons</a> change the style</h6>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="10" stateOn="zmdi-circle" stateOff="zmdi-circle-o"
+              style="color: #ff6b68;"></rating>
+      <br>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="10" stateOn="zmdi-check-square" stateOff="zmdi-square-o"
+              style="color: #03A9F4;"></rating>
+      <br>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="10" stateOn="zmdi-check-circle" stateOff="zmdi-circle-o"
+              style="color: #32c787;"></rating>
+      <br>
+      <rating class="ratings" [(ngModel)]="ratingsValue" [max]="10" stateOn="zmdi-check-all" stateOff="zmdi-check"
+              style="color: #f5c942;"></rating>
+    </div>
+  </div>
+</section>

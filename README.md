@@ -1,6 +1,6 @@
 ## Angular Electron Admin
 
-Bootstrap and package your project with Angular 12 and Electron 13 (Typescript + LESS + HMR) for creating Desktop applications.
+Bootstrap and package your project with Angular 12 and Electron 13 (Typescript + SCSS + HMR) for creating Desktop applications.
 
 |Project|Version|
 |---|---|

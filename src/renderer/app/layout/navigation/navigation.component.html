@@ -1,52 +1,90 @@
 <aside class="sidebar" [class.toggled]="sidebarVisible">
-  <ul class="navigation">
-    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
-      <a (click)="toggleNavigationSub('Icon', $event)">
-        <i class="zmdi zmdi-share"></i> Icon</a>
-      <ul [@toggleHeight]="navigationSubState.Icon">
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/icon/zmdi']"><i class="fa fa-id-card-o"></i> Material Icon</a>
-        </li>
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/icon/fa']"><i class="fa fa-fax"></i> Fa Icon</a>
-        </li>
-      </ul>
-    </li>
-    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
-      <a (click)="toggleNavigationSub('Component', $event)">
-        <i class="zmdi zmdi-nature"></i> Component</a>
-      <ul [@toggleHeight]="navigationSubState.Component">
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/clipboard']"><i class="fa fa-clipboard"></i> Clipboard</a>
-        </li>
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/tooltips']"><i class="fa fa-tripadvisor"></i> Tooltips</a>
-        </li>
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/scrollbar']"><i class="fa fa-bars"></i> Scrollbar</a>
-        </li>
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/datepicker']"><i class="fa fa-clock-o"></i> Datepicker</a>
-        </li>
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/carousel']"><i class="fa fa-calculator"></i> Carousel</a>
-        </li>
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/progressbar']"><i class="fa fa-pagelines"></i> Progressbar</a>
-        </li>
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/component/keyboard']"><i class="fa fa-keyboard-o"></i> Keyboard</a>
-        </li>
-      </ul>
-    </li>
-    <li routerLinkActive="navigation__sub--active" class="navigation__sub">
-      <a (click)="toggleNavigationSub('Directive', $event)">
-        <i class="zmdi zmdi-chart"></i> Directive</a>
-      <ul [@toggleHeight]="navigationSubState.Directive">
-        <li routerLinkActive="navigation__active">
-          <a [routerLink]="['/directive/contribution']"><i class="fa fa-connectdevelop"></i> Contribution</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
+  <perfect-scrollbar>
+    <ul class="navigation">
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Icon', $event)">
+          <i class="zmdi zmdi-share"></i> Icon</a>
+        <ul [@toggleHeight]="navigationSubState.Icon">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/icon/zmdi']"><i class="fa fa-id-card-o"></i> Material Icon</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/icon/fa']"><i class="fa fa-fax"></i> Fa Icon</a>
+          </li>
+        </ul>
+      </li>
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Component', $event)">
+          <i class="zmdi zmdi-nature"></i> Component</a>
+        <ul [@toggleHeight]="navigationSubState.Component">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/clipboard']"><i class="fa fa-clipboard"></i> Clipboard</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/tooltips']"><i class="fa fa-tripadvisor"></i> Tooltips</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/scrollbar']"><i class="fa fa-bars"></i> Scrollbar</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/datepicker']"><i class="fa fa-clock-o"></i> Datepicker</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/carousel']"><i class="fa fa-calculator"></i> Carousel</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/progressbar']"><i class="fa fa-pagelines"></i> Progressbar</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/keyboard']"><i class="fa fa-keyboard-o"></i> Keyboard</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/sortable']"><i class="fa fa-sort"></i> Sortable</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/rating']"><i class="fa fa-random"></i> Rating</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/alert']"><i class="fa fa-warning"></i> Alert</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/tabs']"><i class="fa fa-tag"></i> Tabs</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/toasty']"><i class="fa fa-newspaper-o"></i> Toasty</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/typeahead']"><i class="fa fa-tty"></i> Typeahead</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/timepicker']"><i class="fa fa-times-circle"></i> Timepicker</a>
+          </li>
+        </ul>
+      </li>
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Directive', $event)">
+          <i class="zmdi zmdi-chart"></i> Directive</a>
+        <ul [@toggleHeight]="navigationSubState.Directive">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/directive/contribution']"><i class="fa fa-connectdevelop"></i> Contribution</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/directive/screenshot']"><i class="fa fa-camera"></i> Screenshot</a>
+          </li>
+        </ul>
+      </li>
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Error', $event)">
+          <i class="zmdi zmdi-smartphone-erase"></i> Error</a>
+        <ul [@toggleHeight]="navigationSubState.Error">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/error/403']"><i class="fa fa-navicon"></i> Forbidden(403)</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/error/404']"><i class="fa fa-newspaper-o"></i> NotFound(404)</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </perfect-scrollbar>
 </aside>

@@ -1,0 +1,39 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Alert</h1>
+    <small>This template is built using <code>ngx-bootstrap/alert</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Basic Alert</h4>
+      <alert *ngFor="let alert of allAlerts" type="{{alert}}">
+        I'm Alert!
+      </alert>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">With links to Alert</h4>
+      <alert *ngFor="let alert of allAlerts" type="{{alert}}">
+        I'm Alert! <a href="#" class="alert-link">I am a link!</a>
+      </alert>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">With content Alert</h4>
+      <alert *ngFor="let alert of allAlerts" type="{{alert}}">
+        <h4 class="alert-heading">I'm title</h4>
+        <p>I'm context</p>
+      </alert>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">With button Alert</h4>
+      <alert *ngFor="let alert of allAlerts" type="{{alert}}" dismissible="true">
+        I have the Alert button
+      </alert>
+    </div>
+  </div>
+</section>
