@@ -1,0 +1,20 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Typeahead</h1>
+    <small>This template is built using <code>ngx-bootstrap/typeahead</code> and provides some usage examples</small>
+  </header>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Typeahead</h4>
+          <div class="form-group">
+            <input [(ngModel)]="selected" [typeahead]="states" class="form-control" placeholder="Enter S here">
+            <i class="form-group__bar"></i>
+          </div>
+          <pre>Selected data: {{selected | json}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

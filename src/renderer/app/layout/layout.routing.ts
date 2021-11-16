@@ -78,6 +78,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'toasty',
             loadChildren: () => import('../pages/component/toasty/toasty.module').then(m => m.ToastyComponentModule)
+          },
+          {
+            path: 'typeahead',
+            loadChildren: () => import('../pages/component/typeahead/typeahead.module').then(m => m.TypeaheadComponentModule)
           }
         ]
       },
