@@ -86,6 +86,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'timepicker',
             loadChildren: () => import('../pages/component/timepicker/timepicker.module').then(m => m.TimepickerComponentModule)
+          },
+          {
+            path: 'accordion',
+            loadChildren: () => import('../pages/component/accordion/accordion.module').then(m => m.AccordionComponentModule)
           }
         ]
       },
