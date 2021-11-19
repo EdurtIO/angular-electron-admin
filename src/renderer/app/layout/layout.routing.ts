@@ -90,6 +90,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'accordion',
             loadChildren: () => import('../pages/component/accordion/accordion.module').then(m => m.AccordionComponentModule)
+          },
+          {
+            path: 'collapse',
+            loadChildren: () => import('../pages/component/collapse/collapse.module').then(m => m.CollapseComponentModule)
           }
         ]
       },
