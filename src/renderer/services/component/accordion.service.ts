@@ -6,7 +6,7 @@ export class AccordionService implements BaseService {
   }
 
   builderMockData(): any {
-    const accordions: AccordionModel[] = new Array();
+    const accordions: AccordionModel[] = new Array<AccordionModel>();
     for (let i = 1; i <= 6; i++) {
       const accordion = new AccordionModel();
       accordion.title = 'Just click on me (No' + i + ')';
