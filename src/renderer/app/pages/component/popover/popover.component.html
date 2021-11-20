@@ -1,0 +1,54 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Popover</h1>
+    <small>This template is built using <code>ngx-bootstrap/popover</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Basic Popover</h4>
+      <button type="button" class="btn btn-primary" popover="I am content">
+        Click
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Position Popover</h4>
+      <div class="btn-demo">
+        <button type="button" class="btn btn-primary" popover="I am content" popoverTitle="Left" placement="left">
+          Left
+        </button>
+        <button type="button" class="btn btn-primary" popover="I am content" popoverTitle="Top" placement="top">
+          Top
+        </button>
+        <button type="button" class="btn btn-primary" popover="I am content" popoverTitle="Bottom" placement="bottom">
+          Bottom
+        </button>
+        <button type="button" class="btn btn-primary" popover="I am content" popoverTitle="Right" placement="right">
+          Right
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Triggers Popover</h4>
+      <button type="button" class="btn btn-primary" popover="I am content" triggers="mouseenter:mouseleave">
+        Mouse over to me
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Custom page Popover</h4>
+      <template #popTemplate>I am a custom page:
+        <div>
+          <span class="btn btn-danger">I'm an HTML content</span>
+        </div>
+      </template>
+      <button type="button" class="btn btn-primary" [popover]="popTemplate" triggers="focus">
+        Click
+      </button>
+    </div>
+  </div>
+</section>

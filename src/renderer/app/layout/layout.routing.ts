@@ -94,6 +94,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'collapse',
             loadChildren: () => import('../pages/component/collapse/collapse.module').then(m => m.CollapseComponentModule)
+          },
+          {
+            path: 'popover',
+            loadChildren: () => import('../pages/component/popover/popover.module').then(m => m.PopoverComponentModule)
           }
         ]
       },
