@@ -44,10 +44,6 @@ const LAYOUT_ROUTES: Routes = [
             loadChildren: () => import('../pages/component/scrollbar/scrollbar.module').then(m => m.ScrollbarModule)
           },
           {
-            path: 'datepicker',
-            loadChildren: () => import('../pages/component/datepicker/datepicker.module').then(m => m.DatepickerModule)
-          },
-          {
             path: 'carousel',
             loadChildren: () => import('../pages/component/carousel/carousel.module').then(m => m.CarouselComponentModule)
           },
@@ -62,10 +58,6 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'sortable',
             loadChildren: () => import('../pages/component/sortable/sortable.module').then(m => m.SortableComponentModule)
-          },
-          {
-            path: 'rating',
-            loadChildren: () => import('../pages/component/rating/rating.module').then(m => m.RatingComponentModule)
           },
           {
             path: 'alert',
@@ -84,10 +76,6 @@ const LAYOUT_ROUTES: Routes = [
             loadChildren: () => import('../pages/component/typeahead/typeahead.module').then(m => m.TypeaheadComponentModule)
           },
           {
-            path: 'timepicker',
-            loadChildren: () => import('../pages/component/timepicker/timepicker.module').then(m => m.TimepickerComponentModule)
-          },
-          {
             path: 'accordion',
             loadChildren: () => import('../pages/component/accordion/accordion.module').then(m => m.AccordionComponentModule)
           },
@@ -98,6 +86,23 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'popover',
             loadChildren: () => import('../pages/component/popover/popover.module').then(m => m.PopoverComponentModule)
+          }
+        ]
+      },
+      {
+        path: 'form',
+        children: [
+          {
+            path: 'datepicker',
+            loadChildren: () => import('../pages/form/datepicker/datepicker.module').then(m => m.DatepickerModule)
+          },
+          {
+            path: 'timepicker',
+            loadChildren: () => import('../pages/form/timepicker/timepicker.module').then(m => m.TimepickerComponentModule)
+          },
+          {
+            path: 'rating',
+            loadChildren: () => import('../pages/form/rating/rating.module').then(m => m.RatingComponentModule)
           }
         ]
       },
