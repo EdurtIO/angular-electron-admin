@@ -103,6 +103,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'rating',
             loadChildren: () => import('../pages/form/rating/rating.module').then(m => m.RatingComponentModule)
+          },
+          {
+            path: 'dropdown',
+            loadChildren: () => import('../pages/form/dropdown/dropdown.module').then(m => m.DropdownComponentModule)
           }
         ]
       },
