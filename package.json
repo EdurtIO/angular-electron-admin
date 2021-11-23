@@ -1,6 +1,6 @@
 {
   "name": "angular-electron-admin",
-  "version": "1.2.0-SNAPSHOT",
+  "version": "1.3.0-SNAPSHOT",
   "description": "Angular Electron Admin Template",
   "homepage": "https://aea.incubator.edurt.io",
   "author": {
@@ -27,7 +27,8 @@
     "release": "npm run build && electron-builder build --publish never",
     "pack:main": "npm run script:tsc && cross-env NODE_ENV=production webpack --progress --config scripts/app-runner/webpack.main.config.js",
     "pack:renderer": "ng build --configuration production",
-    "script:tsc": "tsc -p scripts/tsconfig.json"
+    "script:tsc": "tsc -p scripts/tsconfig.json",
+    "version": "conventional-changelog -i CHANGELOG.md -s -r 0"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +42,7 @@
     "@angular/platform-browser-dynamic": "12.1.2",
     "@angular/router": "12.1.2",
     "bootstrap": "4.0.0-beta",
+    "conventional-changelog-cli": "^2.1.1",
     "d3": "5",
     "font-awesome": "^4.7.0",
     "html2canvas": "^1.3.2",
