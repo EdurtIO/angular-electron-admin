@@ -1,0 +1,17 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Collapse</h1>
+    <small>This template is built using <code>ngx-bootstrap/collapse</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Collapse</h4>
+      <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed">Point I fold
+      </button>
+      <hr class="mt-4 mb-4">
+      <div [collapse]="isCollapsed">
+        I'm Collapse content
+      </div>
+    </div>
+  </div>
+</section>

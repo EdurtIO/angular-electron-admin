@@ -33,7 +33,7 @@
       <br>
       <pre>Ranger: <b>{{rate}}</b>;  Readonly: <i>{{isReadonly}}</i>;  Point to the range: <b>{{overStar || "none"}}</b></pre>
       <br>
-      <div>
+      <div class="btn-demo">
         <button type="button" class="btn btn-primary" (click)="rate = 0" [disabled]="isReadonly">Clear</button>
         <button type="button" class="btn btn-primary" (click)="isReadonly = ! isReadonly">Readonly</button>
       </div>

@@ -7,12 +7,12 @@ export class NavigationService {
   sidebarVisible: boolean;
   sidebarVisibilitySubject: Subject<boolean> = new Subject<boolean>();
 
+  constructor() {
+    this.sidebarVisible = false;
+  }
+
   toggleSidebarVisibility() {
     this.sidebarVisible = !this.sidebarVisible;
     this.sidebarVisibilitySubject.next(this.sidebarVisible);
-  }
-
-  constructor() {
-    this.sidebarVisible = false;
   }
 }

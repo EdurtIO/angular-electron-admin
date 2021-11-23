@@ -27,9 +27,6 @@
             <a [routerLink]="['/component/scrollbar']"><i class="fa fa-bars"></i> Scrollbar</a>
           </li>
           <li routerLinkActive="navigation__active">
-            <a [routerLink]="['/component/datepicker']"><i class="fa fa-clock-o"></i> Datepicker</a>
-          </li>
-          <li routerLinkActive="navigation__active">
             <a [routerLink]="['/component/carousel']"><i class="fa fa-calculator"></i> Carousel</a>
           </li>
           <li routerLinkActive="navigation__active">
@@ -40,9 +37,6 @@
           </li>
           <li routerLinkActive="navigation__active">
             <a [routerLink]="['/component/sortable']"><i class="fa fa-sort"></i> Sortable</a>
-          </li>
-          <li routerLinkActive="navigation__active">
-            <a [routerLink]="['/component/rating']"><i class="fa fa-random"></i> Rating</a>
           </li>
           <li routerLinkActive="navigation__active">
             <a [routerLink]="['/component/alert']"><i class="fa fa-warning"></i> Alert</a>
@@ -57,7 +51,31 @@
             <a [routerLink]="['/component/typeahead']"><i class="fa fa-tty"></i> Typeahead</a>
           </li>
           <li routerLinkActive="navigation__active">
-            <a [routerLink]="['/component/timepicker']"><i class="fa fa-times-circle"></i> Timepicker</a>
+            <a [routerLink]="['/component/accordion']"><i class="fa fa-universal-access"></i> Accordion</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/collapse']"><i class="fa fa-columns"></i> Collapse</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/popover']"><i class="fa fa-podcast"></i> Popover</a>
+          </li>
+        </ul>
+      </li>
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Form', $event)">
+          <i class="zmdi zmdi-text-format"></i> Form</a>
+        <ul [@toggleHeight]="navigationSubState.Form">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/form/timepicker']"><i class="fa fa-times-circle"></i> Timepicker</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/form/datepicker']"><i class="fa fa-clock-o"></i> Datepicker</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/form/rating']"><i class="fa fa-random"></i> Rating</a>
+          </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/form/dropdown']"><i class="fa fa-dribbble"></i> Dropdown</a>
           </li>
         </ul>
       </li>

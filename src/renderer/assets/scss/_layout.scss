@@ -18,7 +18,7 @@
     }
 
     @include media-breakpoint-down(xs) {
-      padding: ($header-height + $grid-gutter-width/2) $grid-gutter-width/2 0;
+      padding: ($header-height + $grid-gutter-width*0.5) $grid-gutter-width*0.5 0;
     }
   }
 }
@@ -29,7 +29,7 @@
   }
 
   @include media-breakpoint-down(sm) {
-    padding: ($header-height + $grid-gutter-width/2) $grid-gutter-width/2 0;
+    padding: ($header-height + $grid-gutter-width*0.5) $grid-gutter-width*0.5 0;
   }
 }
 
