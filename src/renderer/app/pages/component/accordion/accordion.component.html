@@ -1,0 +1,39 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Accordion</h1>
+    <small>This template is built using <code>ngx-bootstrap/accordion</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Basic Accordion</h4>
+      <accordion class="accordion">
+        <accordion-group *ngFor="let accordion of accordions" heading="{{accordion.title}}">
+          {{accordion.description}}
+        </accordion-group>
+      </accordion>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Disable the Accordion</h4>
+      <h6 class="card-subtitle">Usage <code>isDisabled</code> option to disable the function</h6>
+      <accordion class="accordion">
+        <accordion-group *ngFor="let accordion of accordions" heading="{{accordion.title}}"
+                         [isDisabled]="accordion.isDisabled">
+          {{accordion.description}}
+        </accordion-group>
+      </accordion>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Limit the number of accordions opened</h4>
+      <h6 class="card-subtitle">Usage <code>closeOthers</code> option to limit the number of openings</h6>
+      <accordion class="accordion" [closeOthers]="true">
+        <accordion-group *ngFor="let accordion of accordions" heading="{{accordion.title}}">
+          {{accordion.description}}
+        </accordion-group>
+      </accordion>
+    </div>
+  </div>
+</section>

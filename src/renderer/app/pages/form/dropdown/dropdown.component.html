@@ -1,0 +1,310 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Dropdown</h1>
+    <small>This template is built using <code>ngx-bootstrap/dropdown</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Dropdown</h4>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-primary" dropdownToggle>Primary</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-secondary" dropdownToggle>Secondary</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-info" dropdownToggle>Info</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-success" dropdownToggle>Success</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-warning" dropdownToggle>Warning</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-danger" dropdownToggle>Danger</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-light" dropdownToggle>Danger</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Split button Dropdown</h4>
+      <div class="dropdown-demo">
+        <div class="btn-group" dropdown>
+          <button id="split-button" type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-primary dropdown-toggle-split" dropdownToggle>
+            <span class="zmdi zmdi-hc-lg zmdi-caret-down"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li>
+              <a class="dropdown-item">Menu one</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Menu two</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item">Split menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div class="btn-group" dropdown>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle-split" dropdownToggle>
+            <span class="zmdi zmdi-hc-lg zmdi-caret-down"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li>
+              <a class="dropdown-item">Menu one</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Menu two</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item">Split menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div class="btn-group" dropdown>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-info dropdown-toggle-split" dropdownToggle>
+            <span class="zmdi zmdi-hc-lg zmdi-caret-down"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li>
+              <a class="dropdown-item">Menu one</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Menu two</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item">Split menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div class="btn-group" dropdown>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-success dropdown-toggle-split" dropdownToggle>
+            <span class="zmdi zmdi-hc-lg zmdi-caret-down"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li>
+              <a class="dropdown-item">Menu one</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Menu two</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item">Split menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div class="btn-group" dropdown>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-warning dropdown-toggle-split" dropdownToggle>
+            <span class="zmdi zmdi-hc-lg zmdi-caret-down"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li>
+              <a class="dropdown-item">Menu one</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Menu two</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item">Split menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div class="btn-group" dropdown>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-danger dropdown-toggle-split" dropdownToggle>
+            <span class="zmdi zmdi-hc-lg zmdi-caret-down"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li>
+              <a class="dropdown-item">Menu one</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Menu two</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item">Split menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div class="btn-group" dropdown>
+          <button type="button" class="btn btn-light">Danger</button>
+          <button type="button" class="btn btn-light dropdown-toggle-split" dropdownToggle>
+            <span class="zmdi zmdi-hc-lg zmdi-caret-down"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li>
+              <a class="dropdown-item">Menu one</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Menu two</a>
+            </li>
+            <li class="divider dropdown-divider"></li>
+            <li>
+              <a class="dropdown-item">Split menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Disable Dropdown</h4>
+      <div class="dropdown-demo">
+        <div dropdown [isDisabled]="disabled">
+          <button class="btn btn-primary" dropdownToggle>Primary</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <button type="button" class="btn btn-light" (click)="disabled = !disabled">
+        Disable/Enable
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Position Dropdown</h4>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-light" dropdownToggle>Default (left)</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown>
+          <button class="btn btn-light" dropdownToggle>I'm on the right</button>
+          <div *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Dropup Dropdown</h4>
+      <div class="dropdown-demo">
+        <div dropdown [dropup]="true">
+          <button class="btn btn-light" dropdownToggle>I'm left Dropup</button>
+          <div *dropdownMenu class="dropdown-menu" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-demo">
+        <div dropdown [dropup]="true">
+          <button class="btn btn-light" dropdownToggle>I'm Dropup on the right</button>
+          <div *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu one</a>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Menu two</a>
+            <div class="dropdown-divider"></div>
+            <a [routerLink]="['/form/dropdown']" class="dropdown-item">Split menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
