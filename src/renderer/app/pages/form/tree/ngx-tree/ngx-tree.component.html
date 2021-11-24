@@ -1,0 +1,28 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Tree Ngx</h1>
+    <small>This template is built using <code>tree-ngx</code> and provides some usage examples</small>
+  </header>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Tree Ngx</h4>
+      <tree-ngx [nodeItems]="nodeItems"></tree-ngx>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Custom Template</h4>
+      <tree-ngx [nodeItems]="nodeItems">
+        <ng-template #nodeNameTemplate let-node="node" let-context="context">
+          <span [class.active]="context.active">{{node.name}} id: {{node.id}}</span>
+        </ng-template>
+      </tree-ngx>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Options</h4>
+      <tree-ngx [nodeItems]="nodeItems" [options]="options"></tree-ngx>
+    </div>
+  </div>
+</section>
