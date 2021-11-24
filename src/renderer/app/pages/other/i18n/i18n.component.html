@@ -1,0 +1,19 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>I18n</h1>
+    <small>This template is built using <code>@ngx-translate</code></small>
+  </header>
+  <div class="card icons-demo">
+    <div class="card-body">
+      <h4 class="card-title">I18n</h4>
+      <div class="row">
+        <select class="custom-select form-control" (change)="switchLanguage($event.target.value)">
+          <option value="en">English</option>
+          <option value="zh">Chinese</option>
+        </select>
+        <br/>
+        {{ "title" | translate }}
+      </div>
+    </div>
+  </div>
+</section>

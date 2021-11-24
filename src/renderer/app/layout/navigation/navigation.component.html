@@ -77,6 +77,9 @@
           <li routerLinkActive="navigation__active">
             <a [routerLink]="['/form/dropdown']"><i class="fa fa-dribbble"></i> Dropdown</a>
           </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/form/ngx-tree']"><i class="fa fa-tree"></i> Ngx Tree</a>
+          </li>
         </ul>
       </li>
       <li routerLinkActive="navigation__sub--active" class="navigation__sub">
@@ -100,6 +103,15 @@
           </li>
           <li routerLinkActive="navigation__active">
             <a [routerLink]="['/error/404']"><i class="fa fa-newspaper-o"></i> NotFound(404)</a>
+          </li>
+        </ul>
+      </li>
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Other', $event)">
+          <i class="zmdi zmdi-translate"></i> Other</a>
+        <ul [@toggleHeight]="navigationSubState.Other">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/other/i18n']"><i class="fa fa-transgender"></i> I18n</a>
           </li>
         </ul>
       </li>

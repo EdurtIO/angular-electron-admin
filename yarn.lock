@@ -1307,6 +1307,20 @@
   dependencies:
     enhanced-resolve "5.8.2"
 
+"@ngx-translate/core@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@ngx-translate/core/-/core-14.0.0.tgz#af421d0e1a28376843f0fed375cd2fae7630a5ff"
+  integrity sha512-UevdwNCXMRCdJv//0kC8h2eSfmi02r29xeE8E9gJ1Al4D4jEJ7eiLPdjslTMc21oJNGguqqWeEVjf64SFtvw2w==
+  dependencies:
+    tslib "^2.3.0"
+
+"@ngx-translate/http-loader@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@ngx-translate/http-loader/-/http-loader-7.0.0.tgz#905f38d8d13342621516635bf480ff9a4f73e9fc"
+  integrity sha512-j+NpXXlcGVdyUNyY/qsJrqqeAdJdizCd+GKh3usXExSqy1aE9866jlAIL+xrfDU4w+LiMoma5pgE4emvFebZmA==
+  dependencies:
+    tslib "^2.3.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1910,6 +1924,13 @@
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/@yarnpkg/lockfile/download/@yarnpkg/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
   integrity sha1-53qX+9NFt22DJF7c0X05OxtB+zE=
+
+"@ztree/ztree_v3@^3.5.48":
+  version "3.5.48"
+  resolved "https://registry.yarnpkg.com/@ztree/ztree_v3/-/ztree_v3-3.5.48.tgz#ceb020e362f9c97c24a49d46d4b0cb91a57379ba"
+  integrity sha512-4dSA1g26T3j/O3I89+r/Palg+a+xwMGRS1etZoggnCGBPoOrwW8VGA3zitJCK/Yd7eEMX+LfKTRJjEGiWpoN3w==
+  dependencies:
+    jquery ">=1.4.4"
 
 JSONStream@^1.0.4:
   version "1.3.5"
@@ -6335,6 +6356,11 @@ joi@^17.3.0:
     "@sideway/formula" "^3.0.0"
     "@sideway/pinpoint" "^2.0.0"
 
+jquery@>=1.4.4:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.nlark.com/js-tokens/download/js-tokens-4.0.0.tgz?cache=0&sync_timestamp=1619345098261&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjs-tokens%2Fdownload%2Fjs-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -10149,6 +10175,13 @@ tree-kill@1.2.2:
   version "1.2.2"
   resolved "https://registry.npm.taobao.org/tree-kill/download/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
   integrity sha1-TKCakJLIi3OnzcXooBtQeweQoMw=
+
+tree-ngx@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/tree-ngx/-/tree-ngx-4.1.0.tgz#bab5a8b5ea61a91db94a0eb79660f7d12702c250"
+  integrity sha512-0DLfwprMrVNFXQy/Hl6UUvlUel9daVZAYeh8L2secNBaHSD6FWQ2tkuvPMS4Qs1Yg1nbqLLQLgtOXakg6fw77w==
+  dependencies:
+    tslib "^2.2.0"
 
 trim-newlines@^3.0.0:
   version "3.0.1"

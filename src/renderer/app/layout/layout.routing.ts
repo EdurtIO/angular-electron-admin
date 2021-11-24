@@ -107,6 +107,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'dropdown',
             loadChildren: () => import('../pages/form/dropdown/dropdown.module').then(m => m.DropdownComponentModule)
+          },
+          {
+            path: 'ngx-tree',
+            loadChildren: () => import('../pages/form/tree/ngx-tree/ngx-tree.module').then(m => m.NgxTreeModule)
           }
         ]
       },
@@ -133,6 +137,15 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: '404',
             component: NotfoundComponent
+          }
+        ]
+      },
+      {
+        path: 'other',
+        children: [
+          {
+            path: 'i18n',
+            loadChildren: () => import('../pages/other/i18n/i18n.module').then(m => m.I18nModule)
           }
         ]
       }
