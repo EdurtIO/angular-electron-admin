@@ -41,6 +41,8 @@
     "@angular/platform-browser": "12.1.2",
     "@angular/platform-browser-dynamic": "12.1.2",
     "@angular/router": "12.1.2",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
     "@ztree/ztree_v3": "^3.5.48",
     "bootstrap": "4.0.0-beta",
     "conventional-changelog-cli": "^2.1.1",

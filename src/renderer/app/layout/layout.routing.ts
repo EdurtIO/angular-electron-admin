@@ -139,6 +139,15 @@ const LAYOUT_ROUTES: Routes = [
             component: NotfoundComponent
           }
         ]
+      },
+      {
+        path: 'other',
+        children: [
+          {
+            path: 'i18n',
+            loadChildren: () => import('../pages/other/i18n/i18n.module').then(m => m.I18nModule)
+          }
+        ]
       }
     ]
   }

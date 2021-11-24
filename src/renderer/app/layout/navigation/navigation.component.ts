@@ -28,7 +28,8 @@ export class NavigationComponent implements OnInit {
     Component: 'inactive',
     Directive: 'inactive',
     Error: 'inactive',
-    Form: 'inactive'
+    Form: 'inactive',
+    Other: 'inactive'
   };
 
   constructor(private navigationService: NavigationService) {
