@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { I18nComponent } from '@renderer/app/pages/other/i18n/i18n.component';
 
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>
-  new TranslateHttpLoader(http, '/renderer/assets/i18n/', '.json');
+  new TranslateHttpLoader(http, './renderer/assets/i18n/', '.json');
 const I18N_ROUTES = [
   {path: '', component: I18nComponent}
 ];
