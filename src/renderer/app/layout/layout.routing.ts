@@ -86,6 +86,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'popover',
             loadChildren: () => import('../pages/component/popover/popover.module').then(m => m.PopoverComponentModule)
+          },
+          {
+            path: 'modals',
+            loadChildren: () => import('../pages/component/modals/modals.module').then(m => m.ModalsModule)
           }
         ]
       },

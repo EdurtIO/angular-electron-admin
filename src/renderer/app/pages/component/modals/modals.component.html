@@ -1,0 +1,117 @@
+<section class="content--row">
+  <header class="content__title">
+    <h1>Modals</h1>
+    <small>This template is built using <code>ngx-bootstrap/modal</code> and provides some usage examples</small>
+  </header>
+  <div class="card card-demo">
+    <div class="card-body">
+      <h3 class="card-body__title">Size Modal</h3>
+      <div class="btn-demo">
+        <button class="btn btn-light" (click)="ModalDefault.show()">Default Modal</button>
+        <button class="btn btn-light" (click)="ModalLarge.show()">Large Modal</button>
+        <button class="btn btn-light" (click)="ModalSmall.show()">Small Modal</button>
+      </div>
+      <div bsModal #ModalDefault="bs-modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title pull-left">Modal</h5>
+            </div>
+            <div class="modal-body">
+              Modal Context
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link">Button</button>
+              <button type="button" class="btn btn-link" (click)="ModalDefault.hide()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div bsModal #ModalLarge="bs-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title pull-left">Modal</h5>
+            </div>
+            <div class="modal-body">
+              Modal Context
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link" (click)="ModalLarge.hide()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div bsModal #ModalSmall="bs-modal" class="modal fade">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title pull-left">Modal</h5>
+            </div>
+            <div class="modal-body">
+              Modal Context
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link" (click)="ModalSmall.hide()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card card-demo">
+    <div class="card-body">
+      <h3 class="card-body__title">Custom Modal</h3>
+      <div class="btn-demo">
+        <button class="btn btn-light" (click)="ModalBackdropDisabled.show()">Backdrop Disabled Modal</button>
+        <button class="btn btn-light" (click)="ModalIgnoreBackdropClick.show()">Ignore Backdrop Click Modal</button>
+        <button class="btn btn-light" (click)="ModalKeyboardDisabled.show()">Keyboard Disabled Modal</button>
+      </div>
+      <div bsModal #ModalBackdropDisabled="bs-modal" class="modal fade" [config]="{ backdrop: false }">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title pull-left">Modal </h5>
+            </div>
+            <div class="modal-body">
+              Modal Context
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link" (click)="ModalBackdropDisabled.hide()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div bsModal #ModalIgnoreBackdropClick="bs-modal" class="modal fade" [config]="{ ignoreBackdropClick: true }">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title pull-left">Modal </h5>
+            </div>
+            <div class="modal-body">
+              Modal Context
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link" (click)="ModalIgnoreBackdropClick.hide()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div bsModal #ModalKeyboardDisabled="bs-modal" class="modal fade" [config]="{ keyboard: false }">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title pull-left">Modal </h5>
+            </div>
+            <div class="modal-body">
+              Modal Context
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-link" (click)="ModalKeyboardDisabled.hide()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
