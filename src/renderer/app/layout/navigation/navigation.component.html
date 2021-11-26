@@ -118,6 +118,15 @@
           </li>
         </ul>
       </li>
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Editor', $event)">
+          <i class="zmdi zmdi-edit"></i> Editor</a>
+        <ul [@toggleHeight]="navigationSubState.Editor">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/editor/codemirror']"><i class="fa fa-code"></i> Codemirror</a>
+          </li>
+        </ul>
+      </li>
     </ul>
   </perfect-scrollbar>
 </aside>

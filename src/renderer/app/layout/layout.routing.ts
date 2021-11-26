@@ -152,6 +152,15 @@ const LAYOUT_ROUTES: Routes = [
             loadChildren: () => import('../pages/other/i18n/i18n.module').then(m => m.I18nModule)
           }
         ]
+      },
+      {
+        path: 'editor',
+        children: [
+          {
+            path: 'codemirror',
+            loadChildren: () => import('../pages/editor/codemirror/codemirror.module').then(m => m.CodemirrorComponentModule)
+          }
+        ]
       }
     ]
   }
