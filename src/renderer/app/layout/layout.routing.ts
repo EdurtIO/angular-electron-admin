@@ -86,6 +86,10 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'popover',
             loadChildren: () => import('../pages/component/popover/popover.module').then(m => m.PopoverComponentModule)
+          },
+          {
+            path: 'modals',
+            loadChildren: () => import('../pages/component/modals/modals.module').then(m => m.ModalsModule)
           }
         ]
       },
@@ -146,6 +150,15 @@ const LAYOUT_ROUTES: Routes = [
           {
             path: 'i18n',
             loadChildren: () => import('../pages/other/i18n/i18n.module').then(m => m.I18nModule)
+          }
+        ]
+      },
+      {
+        path: 'editor',
+        children: [
+          {
+            path: 'codemirror',
+            loadChildren: () => import('../pages/editor/codemirror/codemirror.module').then(m => m.CodemirrorComponentModule)
           }
         ]
       }

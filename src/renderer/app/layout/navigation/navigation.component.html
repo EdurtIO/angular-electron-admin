@@ -59,6 +59,9 @@
           <li routerLinkActive="navigation__active">
             <a [routerLink]="['/component/popover']"><i class="fa fa-podcast"></i> Popover</a>
           </li>
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/component/modals']"><i class="fa fa-modx"></i> Modals</a>
+          </li>
         </ul>
       </li>
       <li routerLinkActive="navigation__sub--active" class="navigation__sub">
@@ -112,6 +115,15 @@
         <ul [@toggleHeight]="navigationSubState.Other">
           <li routerLinkActive="navigation__active">
             <a [routerLink]="['/other/i18n']"><i class="fa fa-transgender"></i> I18n</a>
+          </li>
+        </ul>
+      </li>
+      <li routerLinkActive="navigation__sub--active" class="navigation__sub">
+        <a (click)="toggleNavigationSub('Editor', $event)">
+          <i class="zmdi zmdi-edit"></i> Editor</a>
+        <ul [@toggleHeight]="navigationSubState.Editor">
+          <li routerLinkActive="navigation__active">
+            <a [routerLink]="['/editor/codemirror']"><i class="fa fa-code"></i> Codemirror</a>
           </li>
         </ul>
       </li>
